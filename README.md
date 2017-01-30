@@ -12,9 +12,9 @@ gist:
        2. Every subtraction gives 2 points
        3. Every multiplication gives 4 points
        4. Every division gives 8 points
-   3. After N numbers have been given, all points are summarised, and
-   preferably time taken to complete is factored in to the overall
-   score (method for this to be worked out).
+    3. After N numbers have been given, all points are summarised, and
+     preferably time taken to complete is factored in to the overall
+     score (method for this to be worked out).
 
 The initial Python implementation will be used to test the idea on my
 own children. If the games seems beneficial I might port it to other
