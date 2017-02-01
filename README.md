@@ -5,6 +5,7 @@ Educational tool for kids to finds components of a number. This is a
 gist:
 
     1. A random number is generated
+
     2. The player gets to write an expression that should evaluate to
      the number. If the expression is correct, a score is calculated
      from the following:
@@ -13,8 +14,8 @@ gist:
        3. Every multiplication gives 4 points
        4. Every division gives 8 points
     3. After N numbers have been given, all points are summarised, and
-     preferably time taken to complete is factored in to the overall
-     score (method for this to be worked out).
+    preferably time taken to complete is factored into the overall
+    score (method for this to be worked out).
 
 The initial Python implementation will be used to test the idea on my
 own children. If the games seems beneficial I might port it to other
