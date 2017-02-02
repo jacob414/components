@@ -18,4 +18,4 @@ def reply(num):
 
 def points(expr):
     n = lambda op: expr.count(op)
-    return n('+') + n('-')*2 + n('*')*3 + n('/')*8
+    return n('+') + n('-')*2 + n('*')*4 + n('/')*8
