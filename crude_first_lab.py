@@ -1,6 +1,6 @@
 from comps.tasks import challenge, answer
 
-num = challenge()
+num = challenge(5, 55)
 answering = True
 while answering:
     try:

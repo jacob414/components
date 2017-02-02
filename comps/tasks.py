@@ -3,8 +3,8 @@ from string import digits
 
 legal = digits+'+-*/()'
 
-def challenge():
-    answer = randint(5, 55)
+def challenge(min, max):
+    answer = randint(min, max)
     return answer
 
 def answer(num):
