@@ -15,3 +15,7 @@ def reply(num):
     s = input('{} >'.format(num))
     expr = ''.join(ch for ch in s if ch in legal)
     return expr
+
+def points(expr):
+    n = lambda op: expr.count(op)
+    return n('+') + n('-')*2 + n('*')*3 + n('/')*8
