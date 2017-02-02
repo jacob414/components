@@ -19,3 +19,17 @@ def reply(num):
 def points(expr):
     n = lambda op: expr.count(op)
     return n('+') + n('-')*2 + n('*')*4 + n('/')*8
+
+def answer(challenge):
+    while True:
+        try:
+            cand_expr = reply(challenge)
+            cand = calc(cand_expr)
+            print('{} = {}'.format(cand_expr, cand))
+            if correct(cand_expr, challenge):
+                print('Correct, {} points'.format(points(cand_expr)))
+                return points(cand_expr)
+            else:
+                print('Incorrect, 0 pts')
+        except SyntaxError:
+            print("Can't understand '{}'".format(cand_expr))
