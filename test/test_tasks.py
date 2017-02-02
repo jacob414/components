@@ -13,7 +13,6 @@ def test_correct():
         a, b = randint(1, 100), randint(1, 100)
         assert correct('{} + {}'.format(a,b), a+b)
 
-
 @pytest.mark.parametrize("expr,expected", (
     ("1+1", 1), ("1+1-2", 3), ("2*2", 4), ("10/2+1", 9)) )
 def test_points(expr, expected):
