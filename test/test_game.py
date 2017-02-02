@@ -14,6 +14,6 @@ def test_correct():
         assert correct('{} + {}'.format(a,b), a+b)
 
 @pytest.mark.parametrize("expr,expected", (
-    ("1+1", 1), ("1+1-2", 3), ("2*2", 4), ("10/2+1", 9)) )
+    ("1+1", 1), ("1+1-2", 3), ("2*2", 4), ("10/2+1", 9),("10", 0)) )
 def test_points(expr, expected):
     assert points(expr) == expected
