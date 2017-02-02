@@ -4,8 +4,8 @@ from py_expression_eval import Parser
 
 legal = digits+'+-*/()'
 parse = Parser().parse
-answer = lambda e: parse(e).evaluate({})
-correct = lambda e, c: answer(e) == c
+calc = lambda e: parse(e).evaluate({})
+correct = lambda e, c: calc(e) == c
 
 def challenge(min, max):
     answer = randint(min, max)
