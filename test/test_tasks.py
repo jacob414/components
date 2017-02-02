@@ -1,7 +1,7 @@
 import pytest
 
 from random import randint
-from comps.tasks import challenge, correct, points
+from comps.game import challenge, correct, points
 
 def test_challenges():
     for n in range(10000):

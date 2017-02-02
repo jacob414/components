@@ -1,4 +1,4 @@
-from comps.tasks import challenge, reply, calc, correct, points
+from comps.game import challenge, reply, calc, correct, points
 
 num = challenge(5, 55)
 answering = True
