@@ -1,7 +1,7 @@
 import pytest
 
 from random import randint
-from comps.game import challenge, correct, points
+from comps.game import challenge, correct, points, illegal
 
 def test_challenges():
     for n in range(10000):
@@ -17,3 +17,8 @@ def test_correct():
     ("1+1", 1), ("1+1-2", 3), ("2*2", 4), ("10/2+1", 9),("10", 0)) )
 def test_points(expr, expected):
     assert points(expr) == expected
+
+@pytest.mark.parametrize("expr,legal", (
+    ("", True), ("+", True), ("10", False)) )
+def test_illegal(expr, legal):
+    assert illegal(expr) == legal

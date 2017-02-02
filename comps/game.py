@@ -20,10 +20,21 @@ def points(expr):
     n = lambda op: expr.count(op)
     return n('+') + n('-')*2 + n('*')*4 + n('/')*8
 
+def illegal(expr):
+    if expr == "":
+        return False
+    try:
+        calc(expr)
+        return False
+    except:
+        return True
+
 def answer(challenge):
     while True:
         try:
             cand_expr = reply(challenge)
+            if illegal(cand_expr):
+                raise SyntaxError()
             cand = calc(cand_expr)
             print('{} = {}'.format(cand_expr, cand))
             if correct(cand_expr, challenge):
