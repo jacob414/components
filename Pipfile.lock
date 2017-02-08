@@ -1,0 +1,110 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "url": "https://pypi.python.org/simple",
+                "verify_ssl": true
+            }
+        ],
+        "requires": {},
+        "hash": {
+            "sha256": "e24ec27e630c854f851c018faa4fb064cbe766d27eb05cfa6a190b89fbb5b381"
+        }
+    },
+    "default": {
+        "py-expression-eval": {
+            "hash": "sha256:b9662c58f8835f6fa3380990f870429fe1176008718a47ce054a7867c4091ad8",
+            "version": "==0.3.4"
+        }
+    },
+    "develop": {
+        "altered.states": {
+            "hash": "sha256:d451b6a45e8b0eefeb47c10d24ec77a916b9801b1ee8ad7bde934f5181328774",
+            "version": "==1.0.1"
+        },
+        "appdirs": {
+            "hash": "sha256:85e58578db8f29538f3109c11250c2a5514a2fcdc9890d9b2fe777eb55517736",
+            "version": "==1.4.0"
+        },
+        "appnope": {
+            "hash": "sha256:5b26757dc6f79a3b7dc9fab95359328d5747fcb2409d331ea66d0272b90ab2a0",
+            "version": "==0.1.0"
+        },
+        "decorator": {
+            "hash": "sha256:73cbaadb8bc4e3c65fe1100773d56331a2d756cc0f5c7b9d8d5d5223fe04f600",
+            "version": "==4.0.11"
+        },
+        "future": {
+            "hash": "sha256:e39ced1ab767b5936646cedba8bcce582398233d6a627067d4c6a454c90cfedb",
+            "version": "==0.16.0"
+        },
+        "ipdb": {
+            "hash": "sha256:fffc45b615e46eb75becbd88a30c69c75e7164ecd0122f2c78579b4dfa41b8c9",
+            "version": "==0.10.2"
+        },
+        "ipython": {
+            "hash": "sha256:56c1ffe6a8b6825ba38258acb432be46f6d5b66152255f1c9c7f7981484ccef2",
+            "version": "==5.2.2"
+        },
+        "ipython-genutils": {
+            "hash": "sha256:6218e9abd612fb5acfb175ea7c7b026006de4df9691d9a73c9b390cfa1a41c2b",
+            "version": "==0.1.0"
+        },
+        "packaging": {
+            "hash": "sha256:99276dc6e3a7851f32027a68f1095cd3f77c148091b092ea867a351811cfe388",
+            "version": "==16.8"
+        },
+        "pexpect": {
+            "hash": "sha256:f853b52afaf3b064d29854771e2db509ef80392509bde2dd7a6ecf2dfc3f0018",
+            "version": "==4.2.1"
+        },
+        "pickleshare": {
+            "hash": "sha256:c9a2541f25aeabc070f12f452e1f2a8eae2abd51e1cd19e8430402bdf4c1d8b5",
+            "version": "==0.7.4"
+        },
+        "prompt-toolkit": {
+            "hash": "sha256:7deb7d6efb3e59cdfa28afe6deb50243ac881a2c40da92cc3d29f69284da5796",
+            "version": "==1.0.13"
+        },
+        "ptyprocess": {
+            "hash": "sha256:464cb76f7a7122743dd25507650db89cd447c51f38e4671602b3eaa2e38e05ae",
+            "version": "==0.5.1"
+        },
+        "py": {
+            "hash": "sha256:2d4bba2e25fff58140e6bdce1e485e89bb59776adbe01d490baa6b1f37a3dd6b",
+            "version": "==1.4.32"
+        },
+        "pygments": {
+            "hash": "sha256:78f3f434bcc5d6ee09020f92ba487f95ba50f1e3ef83ae96b9d5ffa1bab25c5d",
+            "version": "==2.2.0"
+        },
+        "pyparsing": {
+            "hash": "sha256:67101d7acee692962f33dd30b5dce079ff532dd9aa99ff48d52a3dad51d2fe84",
+            "version": "==2.1.10"
+        },
+        "pytest": {
+            "hash": "sha256:da0ab50c7eec0683bc24f1c1137db1f4111752054ecdad63125e7ec71316b813",
+            "version": "==3.0.6"
+        },
+        "setuptools": {
+            "hash": "sha256:5f74aabe68c441b99dca68c22796d5cbf532cb38b0aeada17d1d3988809de6e6",
+            "version": "==34.1.1"
+        },
+        "simplegeneric": {
+            "hash": "sha256:dc972e06094b9af5b855b3df4a646395e43d1c9d0d39ed345b7393560d0b9173",
+            "version": "==0.8.1"
+        },
+        "six": {
+            "hash": "sha256:0ff78c403d9bccf5a425a6d31a12aa6b47f1c21ca4dc2573a7e2f32a97335eb1",
+            "version": "==1.10.0"
+        },
+        "traitlets": {
+            "hash": "sha256:50522e46dd7b66c80686d50ff1b774000f1d2a80c84b2bcfbd657d588e99a368",
+            "version": "==4.3.1"
+        },
+        "wcwidth": {
+            "hash": "sha256:f4ebe71925af7b40a864553f761ed559b43544f8f71746c2d756c7fe788ade7c",
+            "version": "==0.1.7"
+        }
+    }
+}
