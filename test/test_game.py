@@ -1,4 +1,5 @@
 import time
+import os
 
 import pytest
 from altered import state, E
@@ -28,7 +29,7 @@ def test_points(expr, expected):
     assert points(expr) == expected
 
 @pytest.mark.parametrize("expr,legal", (
-    ("", False), ("+", True), ("10", False)) )
+    ("", True), (os.linesep, True), ("+", True), ("10", False)) )
 def test_illegal(expr, legal):
     "illegal() guards against certain known problematic illegal expressions"
     assert illegal(expr) == legal

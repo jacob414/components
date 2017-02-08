@@ -1,3 +1,4 @@
+import os
 from random import randint
 import time
 from string import digits
@@ -22,8 +23,8 @@ def points(expr):
     return n('+') + n('-')*2 + n('*')*4 + n('/')*8
 
 def illegal(expr):
-    if expr == "":
-        return False
+    if expr in ("", os.linesep):
+        return True
     try:
         calc(expr)
         return False
