@@ -1,6 +1,8 @@
 import pytest
+from altered import state, E
 
 from random import randint
+from comps import game
 from comps.game import challenge, correct, points, illegal
 
 def test_challenges():
@@ -22,3 +24,7 @@ def test_points(expr, expected):
     ("", False), ("+", True), ("10", False)) )
 def test_illegal(expr, legal):
     assert illegal(expr) == legal
+
+def test_answer_integration_correct():
+    with state(game, reply=lambda *a: '1+1'):
+        assert game.answer(2) == 1
