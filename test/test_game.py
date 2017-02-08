@@ -1,5 +1,8 @@
+import time
+
 import pytest
 from altered import state, E
+from mock import MagicMock
 
 from random import randint
 from comps import game
@@ -28,3 +31,16 @@ def test_illegal(expr, legal):
 def test_answer_integration_correct():
     with state(game, reply=lambda *a: '1+1'):
         assert game.answer(2) == 1
+
+def test_answer_integration_incorrect_retry_correct():
+    correct = lambda challenge: '1+1'
+    def incorrect(challenge):
+        game.reply = correct
+        return '1+2'
+
+    mock_sleep = MagicMock()
+    with state(game, reply=incorrect), state(time, sleep=mock_sleep):
+        game.answer(2)
+        assert mock_sleep.call_args[0] == (2,) # slept 2s, then retry
+        points = game.answer(2)
+        assert points == 1 # now correct

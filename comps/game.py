@@ -1,4 +1,5 @@
 from random import randint
+import time
 from string import digits
 from py_expression_eval import Parser
 
@@ -42,5 +43,7 @@ def answer(challenge):
                 return points(cand_expr)
             else:
                 print('Incorrect, 0 pts')
+                time.sleep(2)
+                continue
         except SyntaxError:
             print("Can't understand '{}'".format(cand_expr))
