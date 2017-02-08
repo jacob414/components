@@ -19,6 +19,6 @@ def test_points(expr, expected):
     assert points(expr) == expected
 
 @pytest.mark.parametrize("expr,legal", (
-    ("", True), ("+", True), ("10", False)) )
+    ("", False), ("+", True), ("10", False)) )
 def test_illegal(expr, legal):
     assert illegal(expr) == legal
