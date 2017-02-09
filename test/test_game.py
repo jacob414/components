@@ -22,6 +22,12 @@ def test_correct():
         assert correct('{} + {}'.format(a,b), a+b)
         assert not correct('{} - {}'.format(a,b), a+b)
 
+@pytest.mark.parametrize("inp,filtered", (
+    ("1 + 1", "1+1"), ("q", "q")))
+def test_expr_filter(inp,filtered):
+    "expr_filter() should allow digits, operations, parens & 'q'"
+    assert game.expr_filter(inp) == filtered
+
 @pytest.mark.parametrize("expr,expected", (
     ("1+1", 1), ("1+1-2", 3), ("2*2", 4), ("10/2+1", 9),("10", 0)) )
 def test_points(expr, expected):

@@ -4,7 +4,7 @@ import time
 from string import digits
 from py_expression_eval import Parser
 
-legal = digits+'+-*/()'
+legal = digits+'+-*/()q'
 parse = Parser().parse
 calc = lambda e: parse(e).evaluate({})
 correct = lambda e, c: calc(e) == c
@@ -13,10 +13,9 @@ def challenge(min, max):
     answer = randint(min, max)
     return answer
 
-def reply(num):
-    s = input('{} >'.format(num))
-    expr = ''.join(ch for ch in s if ch in legal)
-    return expr
+expr_filter = lambda inp: ''.join(ch for ch in inp if ch in legal)
+
+reply = lambda num: input('{} >'.format(num))
 
 def points(expr):
     n = lambda op: expr.count(op)
