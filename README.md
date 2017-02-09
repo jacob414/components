@@ -23,7 +23,7 @@ platforms where it's easier to implement more interactivity and nicer
 media.
 
 *Update 2017-02-09*: The web-app variant will be re-created in a
-separate repository to avoid mixin programming languages in the same
+separate repository to avoid mixing programming languages in the same
 repo.
 
 ## Installation
