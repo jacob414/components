@@ -9,6 +9,9 @@ parse = Parser().parse
 calc = lambda e: parse(e).evaluate({})
 correct = lambda e, c: calc(e) == c
 
+QUIT_TOKEN = 'q'
+QUIT_PTS = -1
+
 def challenge(min, max):
     answer = randint(min, max)
     return answer
@@ -34,6 +37,8 @@ def answer(challenge):
     while True:
         try:
             cand_expr = reply(challenge)
+            if cand_expr == QUIT_TOKEN:
+                return QUIT_PTS
             if illegal(cand_expr):
                 raise SyntaxError()
             cand = calc(cand_expr)

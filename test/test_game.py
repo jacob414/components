@@ -58,3 +58,8 @@ def test_answer_integration_incorrect_retry_correct():
         assert mock_sleep.call_args[0] == (2,) # slept 2s, then retry
         points = game.answer(2)
         assert points == 1 # now correct
+
+def test_answer_integration_give_up_number():
+    "answering `'q'` should give up with a specified points disadvantage"
+    with state(game, reply=lambda *a: 'q'):
+        assert game.answer(2) == game.QUIT_PTS
