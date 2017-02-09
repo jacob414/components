@@ -10,7 +10,7 @@ calc = lambda e: parse(e).evaluate({})
 correct = lambda e, c: calc(e) == c
 
 QUIT_TOKEN = 'q'
-QUIT_PTS = -1
+QUIT_PTS = -3
 
 def challenge(min, max):
     answer = randint(min, max)
